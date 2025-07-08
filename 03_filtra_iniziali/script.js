@@ -5,9 +5,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 
+const oneLetter = (array,letter) => {
+return array.filter(name => name.startsWith(letter));
+}
+
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(oneLetter(names, "A"));
 
 //Risultato atteso se si passa la lettera A: ["Anna", "Adele", "Alessandra"]

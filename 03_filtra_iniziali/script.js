@@ -4,7 +4,8 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
-
+// funzione tradizionale
+// function oneLetter (array,letter) {}
 const oneLetter = (array,letter) => {
 return array.filter(name => name.startsWith(letter));
 }

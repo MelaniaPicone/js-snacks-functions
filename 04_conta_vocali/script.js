@@ -6,22 +6,26 @@ const word = 'javascript';
 
 // funzione tradizionale
 // function vocalFind (string) {}
-const letterFind = (string) => {
+function countVowels(string) {
+  // dichiaro un array di vocali
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+let count = 0;
 
-for (let i=0; i < word.length ; i++){
-const vowelsFind = string[i].match(/aeiou/);
-
+// ciclo la parola
+for (let i=0; i<string.length; i++) {
+if (vowels.includes(string[i])) {
+  count++; // count +1
 }
 
-return vowelsFind;
+return count;
+
+}
 
 }
 
 
 // Invoca la funzione qui e stampa il risultato in console
-
-console.log(word(vowelsFind));
-
+console.log(countVowels(word));
 
 
 //Risultato atteso se si passa 'javascript': 3 (a, a, i)

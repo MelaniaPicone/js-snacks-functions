@@ -6,8 +6,7 @@ const userName = 'Mario';
 // Dichiara la funzione qui.
 
 const greetings = (name) => {
-const saluto = 'Ciao';
-return `${saluto} ${name}`;}
+console.log(`Ciao ${name}`)}
 
 // funzione tradizionale
 //function greetings(name) {
@@ -18,7 +17,7 @@ return `${saluto} ${name}`;}
 
 // Invoca la funzione qui e stampa il risultato in console
 
-console.log(greetings(userName));
+greetings(userName);
 
 
 //Risultato atteso se si passa 'Mario': // ciao Mario

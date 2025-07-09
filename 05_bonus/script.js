@@ -9,10 +9,34 @@ const name = 'Mario';
 
 
 // Dichiara la funzione qui.
+const greetings = (string) => {
+// variabile contenente la data odierna
+const date = new Date();
+const hours = date.getHours();
+
+let greetings = '';
+
+if (hours < 13) {
+  greetings = 'Buongiorno'
+}
+
+else if (hours < 18) {
+  greetings = 'Buon Pomeriggio'
+}
+
+else {
+  greetings = 'Buonasera'
+}
+
+return `${greetings} ${string}`;
+
+
+}
+
 
 
 // Invoca la funzione qui e stampa il risultato in console
 
-
+console.log(greetings(name))
 
 //Risultato atteso se si passa 'Mario' alle 18: // Buonasera Mario.
